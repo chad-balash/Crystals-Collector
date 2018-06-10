@@ -19,17 +19,19 @@ body {
 }
 
 .game-title {
-  font-size: 48px;
-  color: #568456;
+  font-size: 60px;
+  color: #51719a;
   text-align: center;
+  /* font-family: 'Poor Story', cursive; */
+  font-family: 'Pacifico', cursive;
+  /* font-family: 'Alfa Slab One', cursive; */
+  /* font-family: 'Titan One', cursive; */
 }
 
 .instructions-container {
   line-height: 25px;
 
 }
-
-
 
 .instructions-title {
   font-size: 24px;
@@ -39,39 +41,35 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  margin: 20px auto 0 auto;
 }
 
 .number-guess {
   text-align: center;
-}
-
-#number-to-guess {
+  margin: 20px auto 0 auto;
   font-size: 50px;
+  font-weight: bold;
   padding: 15px;
   color: darkred;
-  background-color: #ffffff;
-  border-radius: 50% 50%;
 }
 
 .stat-bar {
-margin-top:20px;  
-padding:20px;
-background-color: darkcyan;
-display: flex;
-justify-content: space-around;
-border-radius: 10px;
-color: #ffffff;
-font-size: 40px;
-
-
+  margin:20px;  
+  padding:10px;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 40px;
 }
 
 
 .crystal-image {
-    width: 150px;
-    height: 150px;
-    margin: 15px;
-  }
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+}
 
 #crystals {
   margin: 0 auto;
