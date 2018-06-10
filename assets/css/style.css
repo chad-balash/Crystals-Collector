@@ -1,35 +1,34 @@
 
 
 body {
-  /* background-size: 100% 100%; */
   background-repeat: repeat;
   background-image: url("../images/crystal_cave_bg.jpg");
-  /* background-image: linear-gradient(red, yellow); */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
 }
 
 .game {
   margin: 50px auto 50px auto;
   max-width: 900px;
   background: rgba(245, 247, 245, 0.6);
-  padding:20px;
+  padding:15px;
   box-shadow: 0px 1px 2px #666666;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .game-title {
   font-size: 60px;
   color: #51719a;
+  margin-bottom: 10px;
   text-align: center;
-  /* font-family: 'Poor Story', cursive; */
   font-family: 'Pacifico', cursive;
-  /* font-family: 'Alfa Slab One', cursive; */
-  /* font-family: 'Titan One', cursive; */
 }
 
 .instructions-container {
   line-height: 25px;
+  background: rgba(245, 247, 245, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px #666666;
 
 }
 
@@ -41,12 +40,12 @@ body {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin: 20px auto 0 auto;
+  margin: 10px auto 0 auto;
 }
 
 .number-guess {
   text-align: center;
-  margin: 20px auto 0 auto;
+  margin: 10px auto 0 auto;
   font-size: 50px;
   font-weight: bold;
   padding: 15px;
@@ -54,7 +53,7 @@ body {
 }
 
 .stat-bar {
-  margin:20px;  
+  margin:10px;  
   padding:10px;
   background-color: darkcyan;
   display: flex;
@@ -62,8 +61,8 @@ body {
   border-radius: 10px;
   color: #ffffff;
   font-size: 40px;
+  box-shadow: 0px 1px 2px #666666;
 }
-
 
 .crystal-image {
   width: 150px;
@@ -74,4 +73,7 @@ body {
 #crystals {
   margin: 0 auto;
   max-width: 720px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

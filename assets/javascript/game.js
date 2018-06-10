@@ -16,7 +16,12 @@ $(document).ready(function() {
     let numberOptions = [crystal1, crystal2, crystal3, crystal4]; // assign and create array for values
     let crystalImages = ['./assets/images/crystal1.png', './assets/images/crystal2.png', './assets/images/crystal3.png', './assets/images/crystal4.png']; // assign and create array for images
 
-    
+    // Gets Link for click sound
+    let audioElement = document.createElement('audio');
+    audioElement.src='./assets/audio/sfx-magic.mp3';
+    audioElement.autoPlay=false;
+    audioElement.preLoad=true;
+
     // displays values on screen
     $("#number-to-guess").text(targetNumber); 
     $('#wins-count').text(wins);
@@ -38,6 +43,7 @@ $(document).ready(function() {
       crystalValue = parseInt(crystalValue);
       counter += crystalValue;
       $('#score').text(counter);
+      audioElement.play();
 
       if (counter === targetNumber) {
         wins++;
